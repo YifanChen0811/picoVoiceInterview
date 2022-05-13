@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyTorch Redesign by Yifan Chen</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <!-- create div for each section -->
+        <!-- PyTorch Build -->
+        <div class="divRoot">
+            <p class="divHeader">PyTorch Build</p>
+            <div class="grid gridBox3">
+                <span class="active" id="Stable">
+                    Stable(1.11.0)</span>
+                <span class="inactive" id="Preview">Preview(Nightly)</span>
+                <span class="inactive" id="LTS">LTS(1.8.2)</span>
+            </div>
+        </div>
+        <!-- Your OS -->
+        <div class="divRoot">
+            <p class="divHeader">Your OS</p>
+            <div class="grid gridBox3">
+                <span class="active" id="Linux">Linux</span>
+                <span class="inactive" id="Mac">Mac</span>
+                <span class="inactive" id="Windows">Windows</span>
+            </div>
+        </div>
+        <!-- Package -->
+        <div class="divRoot">
+            <p class="divHeader">Package</p>
+            <div class="grid gridBox4">
+                <span class="active" id="Conda">Conda</span>
+                <span class="inactive" id="Pip">Pip</span>
+                <span class="inactive" id="LibTorch">LibTorch</span>
+                <span class="inactive" id="Source">Source</span>
+            </div>
+        </div>
+        <!-- Language -->
+        <div class="divRoot">
+            <p class="divHeader">Language</p>
+            <div class="grid gridBox2">
+                <span class="active" id="Python">Python</span>
+                <span class="inactive" id="C">C++/ Java</span>
+            </div>
+        </div>
+        <!-- Computer Platform -->
+        <div class="divRoot">
+            <p class="divHeader">Computer Platform</p>
+            <div class="grid gridBox4">
+                <span class="active" id="CUDA102">CUDA 10.2</span>
+                <span class="inactive" id="CUDA113">CUDA 11.3</span>
+                <span class="inactive" id="ROC"></span>
+                <span class="inactive" id="CPU">CPU</span>
+            </div>
+        </div>
+
+        <!-- Result -->
+        <div class="resultRoot">
+            <p class="divHeader">Run this Command</p>
+            <div class="resultBox">
+                <!-- leave space for JS -->
+                <p id="result"></p>
+            </div>
+            <div id="note"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
